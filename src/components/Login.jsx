@@ -1,5 +1,5 @@
 import { useGlobalContext } from "../Context";
-import Wrapper from "../assets/wrappers/Login";
+import Wrapper from "../assets/wrappers/ModalForm";
 const Login = () => {
   const { closeLoginModal, isLoginModalOpen } = useGlobalContext();
 

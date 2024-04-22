@@ -11,6 +11,7 @@ const Wrapper = styled.div`
     border-radius: 8px;
     margin: auto;
     width: 90%;
+    max-height: 90%;
     box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
       0 2px 4px -1px rgba(0, 0, 0, 0.06);
     opacity: 0;
@@ -26,6 +27,7 @@ const Wrapper = styled.div`
     padding: 2rem;
     font-family: "Raleway", sans-serif;
     margin: auto;
+    max-height: 90%;
   }
   .close {
     font-size: 3rem;
@@ -42,24 +44,22 @@ const Wrapper = styled.div`
   h2 {
     font-size: 4rem;
     font-weight: 200;
-    margin-top: 2rem;
-    margin-bottom: 2rem;
+    margin-top: auto;
+    margin-bottom: auto;
   }
   form {
     width: 90%;
     min-height: 300px;
     text-align: left;
-    margin-top: 2rem;
-    margin-right: auto;
-    margin-left: auto;
+    margin: auto;
     display: flex;
     padding: 0;
     flex-direction: column;
     align-items: center;
   }
   label {
-    margin-top: 1rem;
-    margin-bottom: 1rem;
+    margin-top: auto;
+    margin-bottom: 0.8rem;
     display: flex;
     flex-direction: column;
     width: 80%;
@@ -77,8 +77,8 @@ const Wrapper = styled.div`
     background: #c9156e;
     background-image: linear-gradient(315deg, #b93bc2 0%, #c9156e 68%);
     border-radius: 24px;
-    margin-bottom: 1rem;
-    margin-top: 1rem;
+    margin-top: 0.8rem;
+    margin-bottom: auto;
     border: none;
     color: #ededed;
     padding: 0.8rem;

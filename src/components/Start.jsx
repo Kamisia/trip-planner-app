@@ -2,7 +2,7 @@ import { useGlobalContext } from "../Context";
 import Wrapper from "../assets/wrappers/Start";
 
 const Start = () => {
-  const { openLoginModal } = useGlobalContext();
+  const { openLoginModal, openSingUpModal } = useGlobalContext();
   return (
     <Wrapper>
       <div className="app">
@@ -12,7 +12,7 @@ const Start = () => {
           <h2>Explore, Dream, Discover, Go!</h2>
           <p>Enjoy time exploring the world</p>
           <div className="button-content">
-            <button>Sing Up</button>
+            <button onClick={openSingUpModal}> Sing Up</button>
             <button onClick={openLoginModal}>Login</button>
           </div>
         </div>
