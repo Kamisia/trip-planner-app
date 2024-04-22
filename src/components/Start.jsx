@@ -1,7 +1,8 @@
-import { GoArrowRight } from "react-icons/go";
+import { useGlobalContext } from "../Context";
 import Wrapper from "../assets/wrappers/Start";
 
 const Start = () => {
+  const { openLoginModal } = useGlobalContext();
   return (
     <Wrapper>
       <div className="app">
@@ -10,9 +11,10 @@ const Start = () => {
           <h1>Trip Planner </h1>
           <h2>Explore, Dream, Discover, Go!</h2>
           <p>Enjoy time exploring the world</p>
-          <button>
-            <GoArrowRight />
-          </button>
+          <div className="button-content">
+            <button>Sing Up</button>
+            <button onClick={openLoginModal}>Login</button>
+          </div>
         </div>
       </div>
     </Wrapper>

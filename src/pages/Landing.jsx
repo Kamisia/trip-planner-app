@@ -1,10 +1,5 @@
-import Start from "../components/Start";
 const Landing = () => {
-  return (
-    <div>
-      <Start />
-    </div>
-  );
+  return <div></div>;
 };
 
 export default Landing;
