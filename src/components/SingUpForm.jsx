@@ -9,20 +9,20 @@ const initialValues = {
 };
 const userValidationSchema = Yup.object().shape({
   name: Yup.string()
-    .required("required")
-    .min(2, "Must be 2 characters or more"),
+    .required("Username is required")
+    .min(2, "Username must be 2 characters or more"),
   email: Yup.string()
-    .required("required")
+    .required("Email is required")
     .matches(
       /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/,
       "Email is not correct"
     ),
   password: Yup.string()
-    .min(5, "Must be 5 characters or more")
-    .required("Required"),
+    .min(5, "Password must be 5 characters or more")
+    .required("Password is required"),
   passwordRep: Yup.string()
     .oneOf([Yup.ref("password"), null], "Passwords must match")
-    .required("Required"),
+    .required("Password is required"),
   toggle: Yup.boolean()
     .oneOf([true], "You must accept the agreement")
     .required("You must accept the agreement"),

@@ -63,7 +63,9 @@ const Wrapper = styled.div`
     padding-bottom: 0.3rem;
     display: flex;
     flex-direction: column;
-    width: 80%;
+  }
+  .login-form label {
+    padding: 0;
   }
   input {
     padding: 0.8rem;
@@ -73,6 +75,7 @@ const Wrapper = styled.div`
     background-color: #fcfff6;
     color: #0d0617;
     border: none;
+    outline: none;
   }
   p {
     padding: 0;
@@ -102,17 +105,19 @@ const Wrapper = styled.div`
     background: #c9156e;
     background-image: linear-gradient(315deg, #b93bc2 0%, #c9156e 68%);
     border-radius: 24px;
-    margin-top: 0.8rem;
-    margin-bottom: auto;
+    margin: auto;
     border: none;
     color: #ededed;
     padding: 0.8rem;
+    margin-top: 0.8rem;
     width: 85%;
-    margin-left: auto;
-    margin-right: auto;
+
     cursor: pointer;
     font-size: 1em;
     transition: 0.5s ease-in-out;
+  }
+  .login-form button {
+    margin: auto;
   }
   button:hover {
     border: 1px #c9156e solid;

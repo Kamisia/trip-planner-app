@@ -1,5 +1,6 @@
 import { useGlobalContext } from "../Context";
 import Wrapper from "../assets/wrappers/ModalForm";
+import LoginForm from "./LoginForm";
 const Login = () => {
   const { closeLoginModal, isLoginModalOpen } = useGlobalContext();
 
@@ -11,17 +12,7 @@ const Login = () => {
             &times;
           </span>
           <h2>Login</h2>
-          <form>
-            <label>
-              Accont name
-              <input type="text" />
-            </label>
-            <label>
-              Password
-              <input type="password" />
-            </label>
-            <button type="submit"> Login</button>
-          </form>
+          <LoginForm />
         </div>
       </div>
     </Wrapper>
