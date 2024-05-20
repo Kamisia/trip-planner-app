@@ -1,5 +1,6 @@
 import { useGlobalContext } from "../Context";
 import Wrapper from "../assets/wrappers/ModalForm";
+import SingUpForm from "./SingUpForm";
 const SingUp = () => {
   const { closeSingUpModal, isSingUpModalOpen } = useGlobalContext();
 
@@ -11,26 +12,7 @@ const SingUp = () => {
             &times;
           </span>
           <h2>Join Us</h2>
-          <form>
-            <label>
-              Accont name
-              <input type="text" />
-            </label>
-            <label>
-              Email
-              <input type="email" />
-            </label>
-
-            <label>
-              Password
-              <input type="password" />
-            </label>
-            <label>
-              Repeat Password
-              <input type="password" />
-            </label>
-            <button type="submit"> Sing Up</button>
-          </form>
+          <SingUpForm />
         </div>
       </div>
     </Wrapper>

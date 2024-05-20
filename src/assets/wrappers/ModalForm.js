@@ -27,7 +27,7 @@ const Wrapper = styled.div`
     padding: 2rem;
     font-family: "Raleway", sans-serif;
     margin: auto;
-    max-height: 90%;
+    max-height: 100%;
   }
   .close {
     font-size: 3rem;
@@ -59,18 +59,43 @@ const Wrapper = styled.div`
   }
   label {
     margin-top: auto;
-    margin-bottom: 0.8rem;
+    padding-top: 1rem;
+    padding-bottom: 0.3rem;
     display: flex;
     flex-direction: column;
     width: 80%;
   }
   input {
     padding: 0.8rem;
+    width: 80%;
     border-radius: 24px;
     font-size: 1rem;
     background-color: #fcfff6;
     color: #0d0617;
     border: none;
+  }
+  p {
+    padding: 0;
+    margin: 0;
+    color: #c9156e;
+  }
+
+  .check {
+    flex-direction: column;
+    width: 100%;
+    padding: 1rem;
+    margin-left: 1.5rem;
+    justify-content: space-between;
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+  .check input {
+    padding: 1rem;
+    width: 25px;
+    margin-right: 0;
+  }
+  #label-checkbox {
+    margin-left: 0;
   }
 
   button {
@@ -82,7 +107,7 @@ const Wrapper = styled.div`
     border: none;
     color: #ededed;
     padding: 0.8rem;
-    width: 80%;
+    width: 85%;
     margin-left: auto;
     margin-right: auto;
     cursor: pointer;
